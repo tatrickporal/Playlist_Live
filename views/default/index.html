@@ -1,0 +1,23 @@
+{{extend 'layout.html'}}
+
+<div class="row" id="index-choice">
+  <div class="col-md-12">
+    <div class="jumbotron jumbotron-fluid" style="padding:30px;word-wrap:break-word;">
+      <div class="container center">
+        <a class="btn btn-success" href="{{=URL('default','host')}}">{{=T("Start a Live Playlist")}}</a>
+        <br><br><p>or</p><br>
+        <form enctype="multipart/form-data"
+          action="{{=URL()}}" method="post">
+          Join a Live Playlist!<br><br>
+          Enter URL: <input type="url" sessionURL="name" />
+          <br><br>
+          <input class="btn btn-primary" type="submit" />
+        </form>
+      </div>
+    </div>
+ 
+  </div>
+</div>
+
+
+
